@@ -3,7 +3,7 @@ This proyect is about a challenge where I´ve been working on an API-Rest from M
 Here you can filter by status, order by price , etc.
 
 # Backend 🔹
-<h3>We use the following Mercado Libre endpoint https://api.mercadolibre.com/sites/MLA/search?q={query}. It receives a queryString with parameter q with a string indicating the keyword to search for.</h3>
+We use the following Mercado Libre endpoint https://api.mercadolibre.com/sites/MLA/search?q={query}. It receives a queryString with parameter q with a string indicating the keyword to search for.
 
 /api/search
 This route receives a queryString with a search term. For example: /api/search?query=sneakers, which returns an array of Mercado Libre items.
