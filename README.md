@@ -1,6 +1,7 @@
 # Mercado libre Challenge ✨
 This proyect is about a challenge where I´ve been working on an API-Rest from Mercadolibre.
 Here you can filter by status, order by price , etc.
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=tejon5&label=Profile%20views&color=0e75b6&style=flat" alt="tejon5" /> </p>
 
 # Backend 🔹
 We use the following Mercado Libre endpoint https://api.mercadolibre.com/sites/MLA/search?q={query}. It receives a queryString with parameter q with a string indicating the keyword to search for.
