@@ -1,7 +1,7 @@
 import React from "react";
-import NavBar from "../Components/Navbar";
+
 import {Alert} from "react-bootstrap";
-import ProductSug from "../Components/ProductSug";
+
 
 
 const Home = () =>{

@@ -1,6 +1,6 @@
 import React from "react";
 import { Fragment } from "react";
-import {Card, Button, ListGroup, ListGroupItem, Col, Image, Row, Badge} from "react-bootstrap";
+import {Card, ListGroup, ListGroupItem, Col, Image, Row, Badge} from "react-bootstrap";
 import {sugeridos} from "../apiSugerencia";
 
 
@@ -10,7 +10,7 @@ const ProductSug = () =>{
 
 <Fragment>
 <h3>
- <Badge variant="success" >Sugerencias del Autor</Badge>
+ <Badge variant="danger" >Sugerencias del Autor</Badge>
   </h3>
 <Row>
 {sugeridos && sugeridos.map(e=>(
@@ -26,7 +26,7 @@ const ProductSug = () =>{
   </Card.Body>
   <ListGroup className="list-group-flush">
     <ListGroupItem className="precio">Precio: ${e.price} </ListGroupItem>
-    <ListGroupItem className="estado">Stock: siempre disponible</ListGroupItem>
+    <ListGroupItem className="estado">Stock: disponible</ListGroupItem>
   </ListGroup>
       
   </Card>

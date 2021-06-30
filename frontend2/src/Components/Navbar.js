@@ -4,10 +4,10 @@ import Categorias from "./Categorias";
 import { useDispatch } from "react-redux";
 import axios from "axios";
 import { useHistory } from "react-router-dom"
-import { getSearch } from "../Actions/searchAction";
+
 import Carrusel from "./Carrusel";
 import Catalogo from "./Catalogo";
-import Filtro from "./Filtro"
+
 
 
 const NavBar = () => {
@@ -34,10 +34,11 @@ const NavBar = () => {
     setKeyword("")
   }
 
-
+/*
   const handleChange = (e) => {
     dispatch(getSearch(keyword))
   }
+  */
 
 
 

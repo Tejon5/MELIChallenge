@@ -1,7 +1,5 @@
-import axios from "axios";
-import React, { useState, useEffect, Fragment } from "react";
-import { DropdownButton, Button ,Badge} from "react-bootstrap";
-import { Row, Col, Form } from "react-bootstrap"
+import React, { useState, Fragment } from "react";
+import { Row,  } from "react-bootstrap"
 import Filtro from "./Filtro";
 import ProductCard from "./ProductCard";
 import Pagination from "./Pagination";
@@ -32,9 +30,7 @@ const Catalogo = ({ search, setSearch }) => {
     }else{
     return (
         <Fragment>
-            <h4>
-                <Badge variant="info">Ordene los productos a su gusto</Badge>
-            </h4>
+
             <Filtro search={search} setSearch={setSearch} />
 
             <Row>

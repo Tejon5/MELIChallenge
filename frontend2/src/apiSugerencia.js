@@ -25,7 +25,7 @@ export const sugeridos= [{
     name:"El viaje del Millon",
     price:"1.500",
     image:"https://pictures.abebooks.com/inventory/22414501107.jpg",
-    description:"Las aventuras de Marco Polo en tiempos de explendor del imperio Mongol."
+    description:"Las aventuras de Marco Polo."
 },
 {
     id:"5",

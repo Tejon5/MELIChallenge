@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
-import { getCategories } from "../Actions/searchAction";
 import {Dropdown, DropdownButton} from "react-bootstrap";
 import axios from "axios";
 
@@ -9,7 +7,6 @@ const Categorias = () => {
     const initialState = {name:""}
     const [category, setCategory] = useState(initialState);
   
-
 
     useEffect(() => {
         axios.get('https://api.mercadolibre.com/sites/MLA/categories')
@@ -28,7 +25,6 @@ const Categorias = () => {
                 {category.data && category.data.map(e=>(
              <Dropdown.Item href="#/action-1">{e.name}</Dropdown.Item>
              ))}
-
 
             </DropdownButton>
 
