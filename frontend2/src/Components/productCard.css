@@ -1,0 +1,29 @@
+.card{
+    width: 300px;
+    height: 450px;
+    margin: 10px;
+    margin-left: 10px;
+}
+
+.imgCard{
+   width: 200px;
+   max-height: 200px;
+   min-height:200px;
+   margin: 15px 0px 0px 50px;
+}
+
+.title{
+    text-align: left;
+    font-size: 10px;
+}
+
+.precio, .estado, .stock{
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+}
+
+.precio:hover, .estado:hover, .stock:hover{
+    background: #20c997;
+    color: white;
+}

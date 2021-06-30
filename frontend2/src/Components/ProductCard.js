@@ -1,7 +1,7 @@
 import React from "react";
 import { Fragment } from "react";
 import {Card, Button, ListGroup, ListGroupItem, Col, Image} from "react-bootstrap";
-
+import "./productCard.css"
 
 const ProductCard = ({ search }) =>{
 
@@ -13,20 +13,17 @@ console.log(search)
 <Fragment>
 
 {search && search.map(e=>(
-    <Card style={{ width: '18rem' }} className="my-3">
+    <Card className="card border border-dark " >
      <Col xs={50} md={50} >
-      <Image src={e.thumbnail} thumbnail />
+      <Image className="imgCard border border-secondary border-1" src={e.thumbnail} thumbnail />
     </Col>
- 
   <Card.Body>
-    <Card.Title>{e.title}</Card.Title>
-    <Card.Text> No sea un poligrillo, no sea porfiada lleveselo o lo compra otro otario.
-    </Card.Text>
+    <Card.Title className="title">{e.title}</Card.Title>
   </Card.Body>
   <ListGroup className="list-group-flush">
-    <ListGroupItem>Precio: ${e.price} </ListGroupItem>
-    <ListGroupItem>Estado: {e.condition}</ListGroupItem>
-    <ListGroupItem>Stock: {e.available_quantity}</ListGroupItem>
+    <ListGroupItem className="precio">Precio: ${e.price} </ListGroupItem>
+    <ListGroupItem className="estado">Estado: {e.condition}</ListGroupItem>
+    <ListGroupItem className="stock">Stock: {e.available_quantity}</ListGroupItem>
   </ListGroup>
       
   </Card>

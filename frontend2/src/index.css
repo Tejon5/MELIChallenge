@@ -16,7 +16,7 @@ code {
   font-size: medium;
   
 }
-
+/*
 .my-3{
   grid-template-rows: auto;
   text-align: center;
@@ -24,9 +24,8 @@ code {
   display: inline;
   border-radius: 1rem;
   box-shadow:5px 5px 10px lightslategray;
-  
 }
-
+*/
 .container-foter{
   font-size: medium;
    width: 100%;
