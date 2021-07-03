@@ -9,7 +9,7 @@ import Pagination from "./Pagination";
 const Catalogo = ({ search, setSearch }) => {
     // Paginacion
     const [currentPage, setCurrentPage] = useState(1);
-    const [postsPerPage, setPostPerPage] = useState(30);
+    const [postsPerPage] = useState(30);
 
     //Get Current Posts
     const indexOfLastPost = currentPage * postsPerPage;

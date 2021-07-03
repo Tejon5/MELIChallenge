@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Navbar, FormControl, Form, Nav, Button } from "react-bootstrap";
 import Categorias from "./Categorias";
-import { useDispatch } from "react-redux";
+
 import axios from "axios";
 import { useHistory } from "react-router-dom"
 
@@ -12,7 +12,7 @@ import Catalogo from "./Catalogo";
 
 const NavBar = () => {
   let history = useHistory();
-  const dispatch = useDispatch()
+
 
   //BUSQUEDA
   const [keyword, setKeyword] = useState("")
@@ -49,8 +49,7 @@ const NavBar = () => {
         <Navbar.Brand href="/">T-Shop</Navbar.Brand>
         <Nav className="mr-auto">
           <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/autor">Autor</Nav.Link>
-          <Nav.Link >Novedades de la semana</Nav.Link>
+          <Nav.Link >Novedades</Nav.Link>
         </Nav>
         <Categorias />
         <Form inline onSubmit={handleSubmit}>

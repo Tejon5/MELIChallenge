@@ -14,7 +14,7 @@ server.use(cors())
 
 
 //Peticion a la Api y se guarda dentro de un arreglo con determinados datos
-server.get("/api/search/:q",cache(20) ,(req,res)=>{
+server.get("/api/search/:q"/*,cache(20)*/ ,(req,res)=>{
   const product = req.params.q
  // const regex = /-I/;
 axios.get(`https://api.mercadolibre.com/sites/MLA/search?q=${product}`)
